@@ -1,0 +1,22 @@
+html {
+  scroll-behavior: smooth;
+}
+header {
+  background: #333;
+  padding: 1rem 0;
+  /*固定表示のための記述*/
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+#hero {
+  background-color: #4db1ec;
+  background-image: url('../images/hero.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: color-burn;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
