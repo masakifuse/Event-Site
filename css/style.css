@@ -1,6 +1,18 @@
 html {
   scroll-behavior: smooth;
 }
+:root {
+  --light-blue: #4db1ec;
+  --blue: #1665cc;
+  --purple: #b473bf;
+  --pink: #ffb2c1;
+  --orange: #ff9f67;
+  --yellow: #ffd673;
+  --light-green: #a2e29b;
+  --green: #00a2af;
+  --grey: #333;
+  --white: #fff;
+}
 header {
   background: #333;
   padding: 1rem 0;
@@ -8,6 +20,22 @@ header {
   position: fixed;
   width: 100%;
   z-index: 1;
+}
+.wrapper {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+
+}
+.btn-menu {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  border: 1px solid rgba(255,255,255,.5);
+  color: var(--white);
+  padding: 0.5rem 1rem;
+
 }
 #hero {
   background-color: #4db1ec;
@@ -20,3 +48,33 @@ header {
   display: flex;
   align-items: center;
 }
+.main-nav li {
+  text-align: center;
+  margin: 2rem 0;
+
+}
+header a {
+  color: var(--white);
+  font-size: 1.5rem;
+}
+header .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+header, h1,h2, .hero-date {
+  font-family: impact, sans-serif;
+}
+@media (min-width: 600px) {
+.main-nav {
+  width: 100%;
+  position: static;
+  display: flex;;
+}
+.main-nav li {
+  margin: 0 0 0 1.5rem;
+}
+.btn-menu {
+  display: none;
+}
+}
+
