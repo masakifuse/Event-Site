@@ -48,10 +48,26 @@ header {
   display: flex;
   align-items: center;
 }
+.main-nav {
+  background: var(--grey);
+  width: 0;
+  position: absolute;
+  Z-index: 2;
+  top: 50px;
+  right: 0;
+  overflow: hidden;
+  transition: .5s;
+}
+.main-nav.open-menu {
+  width: 100%;
+}
 .main-nav li {
   text-align: center;
   margin: 2rem 0;
 
+}
+.main-nav a {
+  display: block;
 }
 header a {
   color: var(--white);
