@@ -7,8 +7,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Event-Site</title>
+  <title>Div-Free fuse</title>
   <!-- css -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+
   <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/destyle.css@1.0.5/destyle.css">
   <link href="https://fonts.googleapis.com/css?family=Amatic+SC|M+PLUS+Rounded+1c:400,500&amp;display=swap"
@@ -17,6 +21,7 @@
   <link href="css/style.css" rel="stylesheet">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="images/favicon.png">
   <title>イベントサイト</title>
 </head>
 
@@ -30,15 +35,18 @@
           <li><a href="#about">Content</a></li>
           <li><a href="#news">History</a></li>
           <li><a href="#speakers">The person</a></li>
-          <li><a href="#ticket">Ticket</a></li>
-        </ul>
-      </nav>
+          <li><a href="#ticket">Email</a></li>                                                                                                                                                                                               
+          <li><a class="sign-up" href="user_login_check.html">仕事依頼</a></li>
+
+      
+          </nav>
     </div>
   </header>
 
   <section id="hero">
     <div class="wrapper">
-      <h1>Event-site fuse</h1>
+      <h1 class="home-pege">&nbsp;&nbsp;&nbsp;&nbsp;動画編集<br>ホームページ<br>制作依頼サイト</h1>
+      <h1>Div-Free fuse</h1>
       <p class="hero-date">2022.7.7.14:00 - 18:00</p>
       <p class="hero-date1">
         こちらはWedサイト制作ポートフォリオです。Event-site fuse。
@@ -89,7 +97,7 @@
       <div class="speakers-text">
         <h3>Masaki</h3>
         <p>
-          会社員としてサラリーマンとして高校卒業と同時に就職。以後、転職経験なく現在に至る。独学でWeb開発Web制作を学びいずれはIT分野の世界へ踏み込んで行きます。
+          会社員としてサラリーマンとして高校卒業と同時に就職。以後、転職経験なく現在に至る。<br>独学でWeb開発Web制作を学びいずれはIT分野の世界へ踏み込んで行きます。お仕事依頼は上のリンクからお願いします。<br>相談はmasakifuse1021@gmail.comまで。
 
         </p>
       </div>
@@ -99,19 +107,35 @@
   </section>
 
   <section id="ticket">
-    <h2>Ticket</h2>
+    <h2>Email</h2>
     <form class="ticket-form" action="#">
       <label>name</label>
       <input class="ticket-field" type="text" placeholder="例：布施正貴">
       <label>Email</label>
       <input class="ticket-field" type="email" placeholder="例：hello@example.com">
-      <input class="ticket-btn" type="submit" value="今すぐ参加！">
+      <input class="ticket-btn" type="submit" value="相談してね！">
     </form>
+    <section id="sns">
+      <div class="wrapper">
+        <div class="sns-box">
+          <h3 class="sub-title">Facebook</h3>
+          <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=340&height=315&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="340" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+        <div class="sns-box">
+          <h3 class="sub-title">Twitter</h3>
+          <a class="twitter-timeline" data-height="315" href="https://twitter.com/2X5jX3JO7izPRUC?ref_src=twsrc%5Etfw">Tweets by 2X5jX3JO7izPRUC</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="sns-box">
+          <h3 class="sub-title">YouTube</h3>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/3Qmbv2mMEtg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div><!--  /.wrapper -->
+    </section><!-- /#sns -->
     <div class="footer wrapper">
       <p>
         <a href="masakifuse1021@gmail.com">お問い合わせ</a>
         /
-        <small>@2021 Event-Site fuse</small>
+        <small>@2021 Div-Free fuse</small>
       </p>
     </div>
 
