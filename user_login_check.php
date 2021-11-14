@@ -1,3 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>イベントサイト</title>
+</head>
+<body>
+  
+
+
 <?php
   require_once('../common/common.php');
 $post=sanitize($_POST);
@@ -72,10 +84,11 @@ if(preg_match('/\A[\w\-\.]+\@[\w\-\.]+\.([a-z]+)\z/',$email)==0)
     $okflg = false;
   }
   if($money<50000)
-  if(preg_match('/^[0-9]+$/D', $money))
   {
 
-    echo '(半角数字入力）金額は５００００万円以上で依頼願います。';
+    echo '(半角数字入力）金額は５００００万円以上で依頼願います。<br /><br />';
+    $okflg = false;
+    
   }
   else
   {
@@ -109,7 +122,7 @@ if(preg_match('/\A[\w\-\.]+\@[\w\-\.]+\.([a-z]+)\z/',$email)==0)
   echo '<input type="hidden" name="address" value="'.$address.'">';
   echo '<input type="hidden" name="tel" value="'.$tel.'">';
   echo '<input type="hidden" name="money" value="'.$money.'">';
-  echo '<input type="hidden" name="currentPosition" value="'.$currentPosition.'">';
+  echo '<input type="hidden" name="op" value="'.$op.'">';
   echo '<input type="hidden" name="soudan" value="'.$soudan.'">';
   echo '<input type="button" onclick="history.back()" value="戻る">';
   echo '<input type="submit" value = "OK"><br />';

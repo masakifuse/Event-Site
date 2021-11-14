@@ -43,7 +43,8 @@ try {
   echo '契約書・納品日につきましてはご相談の上決めさせていただきます。<br />';
   echo $address . '<br />';
   echo $tel . '<br />';
-  echo "金額：{$money}";
+  echo "金額：{$money}<br />";
+  echo "ご職業：{$op}<br />";
   echo '<br /><br />';
 
   $user_name = $_POST['onamae'];
