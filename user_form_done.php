@@ -19,10 +19,6 @@ session_destroy();
 </head>
 
 <body>
-
-</body>
-
-</html>
 <?php
 
 try {
@@ -117,7 +113,6 @@ try {
   mb_language('Japanese');
   mb_internal_encoding('UTF-8');
   mb_send_mail($email,$honbun,$header);
-
   $title= 'お客様から注文がありました。';
   $header = 'From:'.$email;
   $honbun = html_entity_decode($honbun,ENT_QUOTES,'UTF-8');
@@ -132,6 +127,9 @@ try {
 }
 
 ?>
+<form method="post" action="index.html">
+ <input type="submit" class="btn btn-primary" value="戻る">
+</form>
 </body>
 
 </html>

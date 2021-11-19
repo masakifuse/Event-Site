@@ -26,7 +26,7 @@ $okflg = true;
 
 if($onamae=='')
 {
-  echo 'お名前が入力されていません。<br/><br/>';
+  echo '<font color="red">※お名前が入力されていません。</font><br/><br/>';
   $okflg = false;
 }
 else
@@ -37,7 +37,7 @@ else
 }
 if($furigana=='')
 {
-  echo 'フリガナが入力されていません。<br /><br />';
+  echo '<font color="red">※フリガナが入力されていません。</font><br /><br />';
   $okflg = false;
 }
 else
@@ -48,7 +48,7 @@ else
 }
 if(preg_match('/\A[\w\-\.]+\@[\w\-\.]+\.([a-z]+)\z/',$email)==0)
   {
-    echo 'メールアドレスを正確に入力してください。<br/><br />';
+    echo '<font color="red">※メールアドレスを正確に入力してください。</font><br/><br />';
     $okflg = false;
   }
   else
@@ -60,7 +60,7 @@ if(preg_match('/\A[\w\-\.]+\@[\w\-\.]+\.([a-z]+)\z/',$email)==0)
 
   if($address=='')
   {
-    echo '住所を入力してください。<br /><br />';
+    echo '<font color="red">※住所を入力してください。</font><br /><br />';
     $okflg = false;
   }
   else
@@ -71,7 +71,7 @@ if(preg_match('/\A[\w\-\.]+\@[\w\-\.]+\.([a-z]+)\z/',$email)==0)
   }
   if($tel=='')
   {
-    echo '電話番号を入力してください。<br /><br />';
+    echo '<font color="red">※電話番号を入力してください。</font><br /><br />';
     $okflg = false;
   }
   echo '電話番号<br />';
@@ -80,13 +80,13 @@ if(preg_match('/\A[\w\-\.]+\@[\w\-\.]+\.([a-z]+)\z/',$email)==0)
 
   if($money=='')
   {
-    echo '金額を半角数字で入力してください。<br /><br />';
+    echo '<font color="red">※金額を半角数字で入力してください。</font><br /><br />';
     $okflg = false;
   }
   if($money<50000)
   {
 
-    echo '(半角数字入力）金額は５００００万円以上で依頼願います。<br /><br />';
+    echo '<font color="red">※(半角数字入力）金額は５００００万円以上で依頼願います。</font><br /><br />';
     $okflg = false;
     
   }
@@ -98,7 +98,7 @@ if(preg_match('/\A[\w\-\.]+\@[\w\-\.]+\.([a-z]+)\z/',$email)==0)
   }
   if($op=='')
   {
-    echo '現在のお客様状況がチェックされていません。<br /><br />';
+    echo '<font color="red">※現在のお客様状況がチェックされていません。</font><br /><br />';
   }
   else
   {
