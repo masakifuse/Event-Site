@@ -38,6 +38,10 @@ header {
   padding: 0.5rem 1rem;
 
 }
+.home-pege {
+color: #FFE5AE;
+text-shadow: 1px 0 0 #000, 0 1px 0 #000, -1px 0 0 #000,0 -1px 0 #000;
+}
 #hero {
   background-color: var(--light-blue);
   background-image: url('../images/sato.jpg');
@@ -256,6 +260,11 @@ img {
   display: block;
 
 }
+.sub-title {
+  border-bottom: 2px #0bd solid;
+  font-weight: normal;
+  padding: 15px 0 ;
+}
 .ticket-field {
   background: rgba(255,255,255,.6);
   padding: 1rem;
@@ -282,18 +291,7 @@ iframe {
   width: 100%;
 }
 #sns {
-  background: #FAF7F0;
-  padding: 4% 0;
-}
-#sns .wrapper {
   display: flex;
-  justify-content: space-between;
-}
-#sns .sub-title {
-  margin-bottom: 30px;
-}
-.sns-box {
-  width: 30%;
 }
 @media (min-width: 600px) {
 .main-nav {
@@ -315,16 +313,18 @@ iframe {
 }
 #sns .wrapper {
   display: flex;
+  justify-content: space-between;
 }
 #sns .sub-title {
   margin-bottom: 30px;
 }
+.sub-title {
+  border-bottom: 2px #0bd solid;
+  font-weight: normal;
+}
+
 .sns-box {
   width: 30%;
-}
-.sns-box {
-  width: 100%;
-
 }
 .sns-box {
   margin-bottom: 30px;
@@ -398,5 +398,5 @@ h2 {
 .speakers-text {
   margin-left: 2rem;
 }
-}
 
+}

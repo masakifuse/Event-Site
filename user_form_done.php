@@ -63,7 +63,7 @@ try {
 
   $dsn = 'mysql:dbname=user;host=localhost;charset=utf8';
   $user = 'root';
-  $password = '';
+  $password = '9601';
   $dbh= new PDO($dsn,$user,$password);
   $dbh->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
   
@@ -101,8 +101,8 @@ try {
   $honbun.="\n";
   $honbun.="代表：布施　正貴";
   $honbun.="\n\n";
-  $honbun.="大阪市平野区瓜破東３丁目７−２１\n";
-  $honbun.="電話 080-3779-6356\n";
+  $honbun.="大阪市平野区瓜破東\n";
+  $honbun.="電話 080-3779-※※※※\n";
   $honbun.="メール masakifuse1021@gmail.com\n";
   $honbun.="□□□□□□□□□□□□□□□□□□□□\n";
   echo'<br />';
